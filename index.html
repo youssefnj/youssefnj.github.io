@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -22,9 +22,366 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <a class="skip" href="#about">Skip to content</a>
+
+    <header class="header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#top">
+          <span class="mark">YN</span>
+          <span class="brand-name">Youssef Najari</span>
+        </a>
+
+        <nav class="nav" id="primary-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn btn-ghost" href="./CV.pdf" download>Download CV</a>
+          <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="primary-nav">
+            Menu
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="wrap">
+          <p class="eyebrow">
+            <span class="dot" aria-hidden="true"></span>
+            Open to internships, apprenticeships, and first roles
+          </p>
+          <h1>Youssef Najari</h1>
+          <p class="hero-sub">Full Stack Engineer · Web & mobile development</p>
+          <p class="lead">
+            I design modern applications, REST APIs, and clean architectures — from Flutter mobile apps to Django and Spring backends.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+          <div class="meta-row">
+            <span>Fez, Morocco</span>
+            <a href="tel:+212608632710">+212 608 632 710</a>
+            <a href="mailto:youssefnajari9x@gmail.com">youssefnajari9x@gmail.com</a>
+            <a href="https://github.com/youssefnj" target="_blank" rel="noreferrer">github.com/youssefnj</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="num">01</span>
+            <h2>About</h2>
+          </div>
+          <div class="about-grid">
+            <div>
+              <p class="about-lead serif">
+                Computer engineering student at ISGA, focused on web and mobile development.
+              </p>
+              <div class="about-body">
+                <p>
+                  I care about modern application design, REST APIs, and software architecture. I aim for readable code, polished interfaces, and reliable delivery.
+                </p>
+                <p>
+                  I work independently and want to contribute to real products — with attention to quality and user impact.
+                </p>
+              </div>
+            </div>
+            <aside class="facts">
+              <div class="fact">
+                <span>Location</span>
+                <strong>Fez, Morocco</strong>
+              </div>
+              <div class="fact">
+                <span>Education</span>
+                <strong>Engineering cycle · ISGA</strong>
+              </div>
+              <div class="fact">
+                <span>Focus</span>
+                <strong>Web, mobile, APIs</strong>
+              </div>
+              <div class="fact">
+                <span>Languages</span>
+                <strong>Arabic · French · English</strong>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="num">02</span>
+            <h2>Skills</h2>
+          </div>
+          <p class="intro">
+            A full-stack toolkit to ship a product end to end: interface, API, data, and delivery.
+          </p>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>Languages</h3>
+              <div class="chips">
+                <span class="chip">Java</span>
+                <span class="chip">Python</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">Dart</span>
+                <span class="chip">C#</span>
+                <span class="chip">PHP</span>
+                <span class="chip">C / C++</span>
+                <span class="chip">HTML / CSS</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <h3>Frontend & mobile</h3>
+              <div class="chips">
+                <span class="chip">Flutter</span>
+                <span class="chip">Angular</span>
+                <span class="chip">React.js</span>
+                <span class="chip">Next.js</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <h3>Backend</h3>
+              <div class="chips">
+                <span class="chip">Django</span>
+                <span class="chip">Django REST Framework</span>
+                <span class="chip">Spring Boot</span>
+                <span class="chip">Node.js</span>
+                <span class="chip">ASP.NET</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <h3>Data</h3>
+              <div class="chips">
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">MySQL</span>
+                <span class="chip">SQL Server</span>
+                <span class="chip">MongoDB</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <h3>DevOps & tools</h3>
+              <div class="chips">
+                <span class="chip">Git / GitHub</span>
+                <span class="chip">Docker</span>
+                <span class="chip">CI/CD</span>
+                <span class="chip">SonarCloud</span>
+                <span class="chip">Swagger / OpenAPI</span>
+                <span class="chip">Postman</span>
+                <span class="chip">Maven</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <h3>Architecture</h3>
+              <div class="chips">
+                <span class="chip">UML</span>
+                <span class="chip">REST API</span>
+                <span class="chip">JWT</span>
+                <span class="chip">MVC</span>
+                <span class="chip">Agile / Scrum</span>
+              </div>
+            </article>
+          </div>
+          <div class="langs">
+            <div class="lang-card">
+              <strong>Arabic</strong>
+              <span>Native</span>
+            </div>
+            <div class="lang-card">
+              <strong>French</strong>
+              <span>Fluent</span>
+            </div>
+            <div class="lang-card">
+              <strong>English</strong>
+              <span>Technical</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="num">03</span>
+            <h2>Experience</h2>
+          </div>
+          <div class="timeline">
+            <article class="job">
+              <div class="year">2025</div>
+              <div>
+                <h3>Web Developer</h3>
+                <div class="org">E-commerce platform</div>
+                <ul>
+                  <li>Built an e-commerce platform with PHP and MySQL.</li>
+                  <li>Managed products, users, orders, and payments.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="job">
+              <div class="year">2024</div>
+              <div>
+                <h3>WordPress Developer</h3>
+                <div class="org">Websites & e-commerce</div>
+                <ul>
+                  <li>Created and customized WordPress websites and online stores.</li>
+                  <li>Adapted themes, content, and the checkout experience.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="num">04</span>
+            <h2>Projects</h2>
+          </div>
+          <p class="intro">
+            Real products across mobile, web, and desktop — with attention to APIs, security, and quality.
+          </p>
+
+          <article class="featured">
+            <div class="kicker">Flagship project · 2026</div>
+            <h3>Dresser AI</h3>
+            <p class="kind">Intelligent mobile app</p>
+            <p class="summary">
+              Wardrobe management and personalized outfit recommendations, with a secured REST API and a quality pipeline.
+            </p>
+            <div class="chips" style="margin-top: 1rem">
+              <span class="chip">Flutter</span>
+              <span class="chip">Dart</span>
+              <span class="chip">Django</span>
+              <span class="chip">DRF</span>
+              <span class="chip">JWT</span>
+              <span class="chip">Swagger</span>
+              <span class="chip">Docker</span>
+              <span class="chip">CI/CD</span>
+            </div>
+            <ul>
+              <li>Modern, responsive Flutter interface.</li>
+              <li>Django REST API for users, clothes, outfits, sessions, and recommendations.</li>
+              <li>JWT authentication, OpenAPI documentation, and Postman collections.</li>
+              <li>Quality and delivery with SonarCloud, GitHub, Docker, and CI/CD.</li>
+            </ul>
+          </article>
+
+          <div class="project-grid">
+            <article class="card">
+              <div class="kicker">2025</div>
+              <h3>My Fit App</h3>
+              <p class="kind">Android app</p>
+              <p>Nutrition tracker with metabolism calculation, goals, and user data.</p>
+              <div class="chips">
+                <span class="chip">Android</span>
+                <span class="chip">Mobile</span>
+              </div>
+            </article>
+            <article class="card">
+              <div class="kicker">2025</div>
+              <h3>FootApp</h3>
+              <p class="kind">Desktop app</p>
+              <p>Sports tracking app with built-in messaging and prediction features.</p>
+              <div class="chips">
+                <span class="chip">Desktop</span>
+                <span class="chip">Messaging</span>
+              </div>
+            </article>
+            <article class="card">
+              <div class="kicker">2024</div>
+              <h3>Library Management</h3>
+              <p class="kind">Web app</p>
+              <p>Library management system built with Jakarta EE / JEE and Angular.</p>
+              <div class="chips">
+                <span class="chip">Jakarta EE</span>
+                <span class="chip">Angular</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="num">05</span>
+            <h2>Education</h2>
+          </div>
+          <div class="edu">
+            <article class="edu-item">
+              <div class="year">2023 — 2026</div>
+              <div>
+                <h3>Engineering Cycle — Computer Engineering</h3>
+                <p class="org">ISGA — Institut Supérieur d’Ingénierie et des Affaires</p>
+                <p class="kind">Web & mobile development</p>
+              </div>
+            </article>
+            <article class="edu-item">
+              <div class="year">2021 — 2023</div>
+              <div>
+                <h3>Integrated Preparatory Classes</h3>
+                <p class="org">ISGA — Institut Supérieur d’Ingénierie et des Affaires</p>
+              </div>
+            </article>
+            <article class="edu-item">
+              <div class="year">2020 — 2021</div>
+              <div>
+                <h3>International Scientific Baccalaureate</h3>
+                <p class="org">Lycée Polyvalent Fez</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="wrap">
+          <div class="contact-box">
+            <h2>Let’s work together</h2>
+            <p>Hiring a full-stack web or mobile engineer? Write to me — I reply quickly.</p>
+            <a class="btn btn-solid" href="mailto:youssefnajari9x@gmail.com">Send an email</a>
+            <div class="contact-links">
+              <a href="mailto:youssefnajari9x@gmail.com">youssefnajari9x@gmail.com</a>
+              <a href="tel:+212608632710">+212 608 632 710</a>
+              <a href="https://github.com/youssefnj" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/youssef-najari" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="./CV.pdf" download>CV</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">© 2026 · Designed and built by Youssef Najari. Available for work.</div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const nav = document.getElementById("primary-nav");
+      menuBtn.addEventListener("click", () => {
+        const open = nav.classList.toggle("open");
+        menuBtn.setAttribute("aria-expanded", String(open));
+      });
+      nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          nav.classList.remove("open");
+          menuBtn.setAttribute("aria-expanded", "false");
+        });
+      });
+    </script>
   </body>
 </html>
