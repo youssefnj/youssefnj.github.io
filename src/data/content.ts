@@ -4,7 +4,7 @@ export const profile = {
   location: "Fez, Morocco",
   phone: "+212 608 632 710",
   phoneHref: "tel:+212608632710",
-  email: "youssefnajari9x@gmail.com",
+  email: "najariyoussef8@gmail.com",
   github: "https://github.com/youssefnj",
   githubLabel: "github.com/youssefnj",
   linkedin: "https://www.linkedin.com/in/youssef-najari",

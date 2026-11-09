@@ -18,5 +18,5 @@ Flutter · Django REST · JWT · Swagger · Docker · CI/CD
 ### Contact
 
 - Portfolio: [youssefnj.github.io](https://youssefnj.github.io)
-- Email: [youssefnajari9x@gmail.com](mailto:youssefnajari9x@gmail.com)
+- Email: [najariyoussef8@gmail.com](mailto:najariyoussef8@gmail.com)
 - GitHub: [github.com/youssefnj](https://github.com/youssefnj)
