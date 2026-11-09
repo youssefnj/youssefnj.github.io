@@ -19,382 +19,290 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <a class="skip" href="#about">Skip to content</a>
+    <a class="skip" href="#profile">Skip to content</a>
 
-    <header class="header">
-      <div class="wrap header-inner">
-        <a class="brand" href="#top">
-          <span class="mark">YN</span>
-          <span class="brand-name">Youssef Najari</span>
-        </a>
-
-        <nav class="nav" id="primary-nav" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-        <div class="header-actions">
-          <a class="btn btn-ghost" href="./CV.pdf" download>Download CV</a>
-          <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="primary-nav">
-            Menu
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <main id="top">
-      <section class="hero">
-        <div class="wrap">
-          <p class="eyebrow">
+    <header class="banner" id="top">
+      <div class="banner-inner">
+        <div class="avatar" aria-hidden="true">YN</div>
+        <div>
+          <h1>Youssef Najari</h1>
+          <p class="role">Full Stack Engineer &nbsp;|&nbsp; Web &amp; Mobile Development</p>
+          <p class="status">
             <span class="dot" aria-hidden="true"></span>
             Open to internships, apprenticeships, and first roles
           </p>
-          <h1>Youssef Najari</h1>
-          <p class="hero-sub">Full Stack Engineer · Web & mobile development</p>
-          <p class="lead">
-            I design modern applications, REST APIs, and clean architectures — from Flutter mobile apps to Django and Spring backends.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-solid" href="#projects">View projects</a>
-            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="topnav">
+        <nav class="nav" id="primary-nav" aria-label="Primary">
+          <a href="#profile">Profile</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#ai">AI</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="btn btn-solid" href="./CV.pdf" download>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 19h16" /></svg>
+          Download CV
+        </a>
+        <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="primary-nav">
+          Menu
+        </button>
+      </div>
+    </header>
+
+    <div class="page">
+      <aside class="side">
+        <section>
+          <h2>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M7 10h4M7 14h10" /></svg>
+            Contact
+          </h2>
+          <ul class="contact-list">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z" /><circle cx="12" cy="10" r="2.5" /></svg>
+              Fez, Morocco
+            </li>
+            <li>
+              <a href="tel:+212608632710">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" /></svg>
+                +212 608 632 710
+              </a>
+            </li>
+            <li>
+              <a href="mailto:najariyoussef8@gmail.com">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
+                najariyoussef8@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/youssef-najari" target="_blank" rel="noreferrer">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M8 11v5M8 8v.01M12 16v-5m0 2a2.5 2.5 0 0 1 5 0v3" /></svg>
+                Youssef Najari
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/youssefnj" target="_blank" rel="noreferrer">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2.5m12 4.5v-3.2a2.8 2.8 0 0 0-.8-2.2c2.6-.3 5.3-1.3 5.3-5.8a4.5 4.5 0 0 0-1.2-3.1 4.2 4.2 0 0 0-.1-3.1s-1-.3-3.2 1.2a11 11 0 0 0-5.8 0C6.9 3.8 5.900 4.1 5.900 4.1a4.2 4.2 0 0 0-.1 3.1A4.500 4.500 0 0 0 4.600 10.300c0 4.500 2.700 5.500 5.300 5.800a2.800 2.800 0 0 0-.8 2.200V21" /></svg>
+                github.com/youssefnj
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-5 4 5 4m8-8 5 4-5 4M14 5l-4 14" /></svg>
+            Skills
+          </h2>
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <p>Java, Python, C, C++, PHP, C#, JavaScript, TypeScript, Dart, HTML, CSS</p>
           </div>
-          <div class="meta-row">
-            <span>Fez, Morocco</span>
+          <div class="skill-group">
+            <h3>Frontend &amp; Mobile</h3>
+            <p>Flutter, Angular, React.js, Next.js</p>
+          </div>
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <p>Django, Django REST Framework, Spring Boot, Node.js, ASP.NET</p>
+          </div>
+          <div class="skill-group">
+            <h3>Databases</h3>
+            <p>PostgreSQL, MySQL, SQL Server, MongoDB</p>
+          </div>
+          <div class="skill-group">
+            <h3>DevOps &amp; Tools</h3>
+            <p>Git, GitHub, Docker, CI/CD, deployment, SonarCloud, Swagger/OpenAPI, Postman, Maven</p>
+          </div>
+          <div class="skill-group">
+            <h3>Design</h3>
+            <p>UML, REST API, JWT, MVC, Agile/Scrum</p>
+          </div>
+          <div class="skill-group">
+            <h3>Artificial Intelligence</h3>
+            <p>LLM integration, RAG, vector database, chatbot, recommendation systems, speech recognition</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.500 2.500 3.500 5.500 3.500 9S14.500 18.500 12 21c-2.500-2.500-3.500-5.500-3.500-9S9.500 5.500 12 3Z" /></svg>
+            Languages
+          </h2>
+          <ul class="lang-list">
+            <li><strong>Arabic</strong><span>Native</span></li>
+            <li><strong>French</strong><span>Fluent</span></li>
+            <li><strong>English</strong><span>Technical</span></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5-8-11a4.500 4.500 0 0 1 8-2.800A4.500 4.500 0 0 1 20 10c0 6-8 11-8 11Z" /></svg>
+            Interests
+          </h2>
+          <ul class="interest-list">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2" /><path d="M8 20h8M12 16v4" /></svg>
+              Technology
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8v8M3 10v4M18 8v8M21 10v4M6 12h12" /></svg>
+              Sport
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="5" /><path d="M7 10v4M5 12h4M15 11h.01M18 13h.01" /></svg>
+              Video games
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m21 3-8 18-2-8-8-2 18-8Z" /></svg>
+              Travel
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+      <main class="main">
+        <section id="profile">
+          <h2>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" /><path d="M4 21a8 8 0 0 1 16 0Z" /></svg>
+            Profile
+          </h2>
+          <p class="profile-text">
+            Computer engineering student at ISGA, specializing in web and mobile development. Passionate about designing modern applications, REST APIs, and software architectures. Rigorous, independent, and motivated, I want to put my technical skills to work on innovative projects and contribute effectively to high-performing solutions.
+          </p>
+        </section>
+
+        <section id="experience">
+          <h2>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18" /></svg>
+            Experience
+          </h2>
+          <article class="item">
+            <h3>Web Developer — E-Commerce Platform</h3>
+            <span class="year">2025</span>
+            <p class="sub">PHP / MySQL</p>
+            <p class="desc">Built an e-commerce platform covering product, user, order, and payment management.</p>
+          </article>
+        </section>
+
+        <section id="projects">
+          <h2>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-5 4 5 4m8-8 5 4-5 4M14 5l-4 14" /></svg>
+            Projects
+          </h2>
+
+          <article class="card">
+            <div class="item">
+              <h3>Fitness Coach — Mobile fitness coaching app</h3>
+              <span class="year">2025</span>
+              <p class="sub">Workout programs, nutrition tracking, and an AI-powered virtual coach</p>
+            </div>
+            <ul class="points">
+              <li><strong>Mobile:</strong> Flutter / Dart in Clean Architecture (Provider, GetIt, Dio); interface in 8 languages, including Arabic (RTL).</li>
+              <li><strong>Backend:</strong> modular REST API with Django REST Framework; JWT and Google Sign-In authentication.</li>
+              <li><strong>AI:</strong> text/voice chatbot with RAG and posture analysis.</li>
+              <li><strong>Payments:</strong> subscription management with Stripe.</li>
+              <li><strong>Quality &amp; DevOps:</strong> Swagger/OpenAPI, Postman, Pytest, SonarQube, Docker, PostgreSQL, Git/GitHub.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="item">
+              <h3>Dresser AI — Intelligent mobile app</h3>
+              <span class="year">2026</span>
+              <p class="sub">Wardrobe management and personalized outfit recommendations</p>
+            </div>
+            <ul class="points">
+              <li><strong>Mobile:</strong> Flutter / Dart; modern, responsive, and intuitive interface.</li>
+              <li><strong>Backend:</strong> Django + Django REST Framework; JWT authentication and authorization.</li>
+              <li><strong>Features:</strong> management of users, clothes, outfits, and sessions.</li>
+              <li><strong>AI:</strong> LLM integration for personalized outfit recommendations, with language detection, intent classification, and guardrails.</li>
+              <li><strong>Quality &amp; DevOps:</strong> Swagger/OpenAPI, Postman, SonarCloud, Git/GitHub, Docker, CI/CD; backend and mobile app deployed.</li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <h3>My Fit App — Android app</h3>
+            <span class="year">2025</span>
+            <p class="sub">Nutrition tracking</p>
+            <p class="desc">Metabolism calculation, goal tracking, and user data management.</p>
+          </article>
+          <article class="item">
+            <h3>FootApp — Desktop app</h3>
+            <span class="year">2025</span>
+            <p class="sub">Sports tracking</p>
+            <p class="desc">Built-in messaging and prediction features.</p>
+          </article>
+          <article class="item">
+            <h3>Library Management App</h3>
+            <span class="year">2024</span>
+            <p class="sub">Jakarta EE / Angular</p>
+            <p class="desc">Library management system.</p>
+          </article>
+        </section>
+
+        <section id="ai">
+          <h2>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="3" /><path d="M12 4v4M9 14h.01M15 14h.01M2 13v2m20-2v2" /></svg>
+            Artificial Intelligence
+          </h2>
+          <ul class="ai-list">
+            <li><strong>Conversational AI:</strong> LLM-based virtual coach with RAG and vector search over an exercise database (Fitness Coach).</li>
+            <li><strong>Vision &amp; voice:</strong> posture analysis, speech-to-text, and audio synthesis.</li>
+            <li><strong>LLM integration:</strong> LLM in a mobile app, with guardrails and intent classification (Dresser AI).</li>
+            <li><strong>Prediction:</strong> prediction features (FootApp).</li>
+          </ul>
+        </section>
+
+        <section id="education">
+          <h2>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9Zm4 2.500V16c0 1.500 3 3 6 3s6-1.500 6-3v-4.500" /></svg>
+            Education
+          </h2>
+          <article class="item">
+            <h3>Engineering Cycle — Computer Engineering</h3>
+            <span class="year">2023 – 2026</span>
+            <p class="sub">Web &amp; mobile development — ISGA, Institut Supérieur d’Ingénierie et des Affaires</p>
+          </article>
+          <article class="item">
+            <h3>Integrated Preparatory Classes</h3>
+            <span class="year">2021 – 2023</span>
+            <p class="sub">ISGA, Institut Supérieur d’Ingénierie et des Affaires</p>
+          </article>
+          <article class="item">
+            <h3>International Scientific Baccalaureate</h3>
+            <span class="year">2020 – 2021</span>
+            <p class="sub">Lycée Polyvalent, Fez</p>
+          </article>
+        </section>
+
+        <section id="contact" class="cta">
+          <h2>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
+            Let’s work together
+          </h2>
+          <p>Hiring a full-stack web or mobile engineer? Write to me — I reply quickly.</p>
+          <a class="btn btn-light" href="mailto:najariyoussef8@gmail.com">Send an email</a>
+          <div class="cta-links">
             <a href="tel:+212608632710">+212 608 632 710</a>
-            <a href="mailto:najariyoussef8@gmail.com">najariyoussef8@gmail.com</a>
-            <a href="https://github.com/youssefnj" target="_blank" rel="noreferrer">github.com/youssefnj</a>
+            <a href="https://github.com/youssefnj" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/youssef-najari" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="./CV.pdf" download>CV</a>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
+    </div>
 
-      <section id="about">
-        <div class="wrap">
-          <div class="section-head">
-            <span class="num">01</span>
-            <h2>About</h2>
-          </div>
-          <div class="about-grid">
-            <div>
-              <p class="about-lead serif">
-                Computer engineering student at ISGA, focused on web and mobile development.
-              </p>
-              <div class="about-body">
-                <p>
-                  I care about modern application design, REST APIs, and software architecture. I aim for readable code, polished interfaces, and reliable delivery.
-                </p>
-                <p>
-                  I work independently and want to contribute to real products — with attention to quality and user impact.
-                </p>
-              </div>
-            </div>
-            <aside class="facts">
-              <div class="fact">
-                <span>Location</span>
-                <strong>Fez, Morocco</strong>
-              </div>
-              <div class="fact">
-                <span>Education</span>
-                <strong>Engineering cycle · ISGA</strong>
-              </div>
-              <div class="fact">
-                <span>Focus</span>
-                <strong>Web, mobile, APIs</strong>
-              </div>
-              <div class="fact">
-                <span>Languages</span>
-                <strong>Arabic · French · English</strong>
-              </div>
-            </aside>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills">
-        <div class="wrap">
-          <div class="section-head">
-            <span class="num">02</span>
-            <h2>Skills</h2>
-          </div>
-          <p class="intro">
-            A full-stack toolkit to ship a product end to end: interface, API, data, and delivery.
-          </p>
-          <div class="skills-grid">
-            <article class="skill-card">
-              <h3>Languages</h3>
-              <div class="chips">
-                <span class="chip">Java</span>
-                <span class="chip">Python</span>
-                <span class="chip">JavaScript</span>
-                <span class="chip">TypeScript</span>
-                <span class="chip">Dart</span>
-                <span class="chip">C#</span>
-                <span class="chip">PHP</span>
-                <span class="chip">C / C++</span>
-                <span class="chip">HTML / CSS</span>
-              </div>
-            </article>
-            <article class="skill-card">
-              <h3>Frontend & mobile</h3>
-              <div class="chips">
-                <span class="chip">Flutter</span>
-                <span class="chip">Angular</span>
-                <span class="chip">React.js</span>
-                <span class="chip">Next.js</span>
-              </div>
-            </article>
-            <article class="skill-card">
-              <h3>Backend</h3>
-              <div class="chips">
-                <span class="chip">Django</span>
-                <span class="chip">Django REST Framework</span>
-                <span class="chip">Spring Boot</span>
-                <span class="chip">Node.js</span>
-                <span class="chip">ASP.NET</span>
-              </div>
-            </article>
-            <article class="skill-card">
-              <h3>Data</h3>
-              <div class="chips">
-                <span class="chip">PostgreSQL</span>
-                <span class="chip">MySQL</span>
-                <span class="chip">SQL Server</span>
-                <span class="chip">MongoDB</span>
-              </div>
-            </article>
-            <article class="skill-card">
-              <h3>DevOps & tools</h3>
-              <div class="chips">
-                <span class="chip">Git / GitHub</span>
-                <span class="chip">Docker</span>
-                <span class="chip">CI/CD</span>
-                <span class="chip">SonarCloud</span>
-                <span class="chip">Swagger / OpenAPI</span>
-                <span class="chip">Postman</span>
-                <span class="chip">Maven</span>
-              </div>
-            </article>
-            <article class="skill-card">
-              <h3>Artificial intelligence</h3>
-              <div class="chips">
-                <span class="chip">LLM integration</span>
-                <span class="chip">RAG</span>
-                <span class="chip">Vector database</span>
-                <span class="chip">Chatbot</span>
-                <span class="chip">Recommendation systems</span>
-                <span class="chip">Speech recognition</span>
-              </div>
-            </article>
-            <article class="skill-card">
-              <h3>Architecture</h3>
-              <div class="chips">
-                <span class="chip">UML</span>
-                <span class="chip">REST API</span>
-                <span class="chip">JWT</span>
-                <span class="chip">MVC</span>
-                <span class="chip">Agile / Scrum</span>
-              </div>
-            </article>
-          </div>
-          <div class="langs">
-            <div class="lang-card">
-              <strong>Arabic</strong>
-              <span>Native</span>
-            </div>
-            <div class="lang-card">
-              <strong>French</strong>
-              <span>Fluent</span>
-            </div>
-            <div class="lang-card">
-              <strong>English</strong>
-              <span>Technical</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="experience">
-        <div class="wrap">
-          <div class="section-head">
-            <span class="num">03</span>
-            <h2>Experience</h2>
-          </div>
-          <div class="timeline">
-            <article class="job">
-              <div class="year">2025</div>
-              <div>
-                <h3>Web Developer</h3>
-                <div class="org">E-commerce platform</div>
-                <ul>
-                  <li>Built an e-commerce platform with PHP and MySQL.</li>
-                  <li>Managed products, users, orders, and payments.</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects">
-        <div class="wrap">
-          <div class="section-head">
-            <span class="num">04</span>
-            <h2>Projects</h2>
-          </div>
-          <p class="intro">
-            Real products across mobile, web, and desktop — with attention to APIs, security, and quality.
-          </p>
-
-          <article class="featured">
-            <div class="kicker">Flagship project · 2025</div>
-            <h3>Fitness Coach</h3>
-            <p class="kind">Mobile fitness coaching app</p>
-            <p class="summary">
-              Workout programs, nutrition tracking, and an AI-powered virtual coach, in 8 languages including Arabic (RTL).
-            </p>
-            <div class="chips" style="margin-top: 1rem">
-              <span class="chip">Flutter</span>
-              <span class="chip">Dart</span>
-              <span class="chip">Django</span>
-              <span class="chip">DRF</span>
-              <span class="chip">JWT</span>
-              <span class="chip">RAG</span>
-              <span class="chip">Stripe</span>
-              <span class="chip">Docker</span>
-              <span class="chip">PostgreSQL</span>
-            </div>
-            <ul>
-              <li>Flutter / Dart in Clean Architecture (Provider, GetIt, Dio), with a multilingual interface in 8 languages including Arabic (RTL).</li>
-              <li>Modular Django REST Framework API with JWT and Google Sign-In authentication.</li>
-              <li>Text and voice chatbot with RAG, plus posture analysis.</li>
-              <li>Subscription management with Stripe.</li>
-              <li>Quality and delivery with Swagger/OpenAPI, Postman, Pytest, SonarQube, Docker, and Git/GitHub.</li>
-            </ul>
-          </article>
-
-          <article class="featured">
-            <div class="kicker">Flagship project · 2026</div>
-            <h3>Dresser AI</h3>
-            <p class="kind">Intelligent mobile app</p>
-            <p class="summary">
-              Wardrobe management and personalized outfit recommendations, with a secured REST API and a quality pipeline.
-            </p>
-            <div class="chips" style="margin-top: 1rem">
-              <span class="chip">Flutter</span>
-              <span class="chip">Dart</span>
-              <span class="chip">Django</span>
-              <span class="chip">DRF</span>
-              <span class="chip">JWT</span>
-              <span class="chip">Swagger</span>
-              <span class="chip">Docker</span>
-              <span class="chip">CI/CD</span>
-            </div>
-            <ul>
-              <li>Modern, responsive Flutter interface.</li>
-              <li>Django REST API for users, clothes, outfits, and sessions, with JWT authentication and authorization.</li>
-              <li>LLM integration for personalized outfit recommendations, with language detection, intent classification, and guardrails.</li>
-              <li>Quality and delivery with Swagger/OpenAPI, Postman, SonarCloud, Docker, and CI/CD; backend and mobile app deployed.</li>
-            </ul>
-          </article>
-
-          <div class="project-grid">
-            <article class="card">
-              <div class="kicker">2025</div>
-              <h3>My Fit App</h3>
-              <p class="kind">Android app</p>
-              <p>Nutrition tracker with metabolism calculation, goals, and user data.</p>
-              <div class="chips">
-                <span class="chip">Android</span>
-                <span class="chip">Mobile</span>
-              </div>
-            </article>
-            <article class="card">
-              <div class="kicker">2025</div>
-              <h3>FootApp</h3>
-              <p class="kind">Desktop app</p>
-              <p>Sports tracking app with built-in messaging and prediction features.</p>
-              <div class="chips">
-                <span class="chip">Desktop</span>
-                <span class="chip">Messaging</span>
-              </div>
-            </article>
-            <article class="card">
-              <div class="kicker">2024</div>
-              <h3>Library Management</h3>
-              <p class="kind">Web app</p>
-              <p>Library management system built with Jakarta EE / JEE and Angular.</p>
-              <div class="chips">
-                <span class="chip">Jakarta EE</span>
-                <span class="chip">Angular</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="education">
-        <div class="wrap">
-          <div class="section-head">
-            <span class="num">05</span>
-            <h2>Education</h2>
-          </div>
-          <div class="edu">
-            <article class="edu-item">
-              <div class="year">2023 — 2026</div>
-              <div>
-                <h3>Engineering Cycle — Computer Engineering</h3>
-                <p class="org">ISGA — Institut Supérieur d’Ingénierie et des Affaires</p>
-                <p class="kind">Web & mobile development</p>
-              </div>
-            </article>
-            <article class="edu-item">
-              <div class="year">2021 — 2023</div>
-              <div>
-                <h3>Integrated Preparatory Classes</h3>
-                <p class="org">ISGA — Institut Supérieur d’Ingénierie et des Affaires</p>
-              </div>
-            </article>
-            <article class="edu-item">
-              <div class="year">2020 — 2021</div>
-              <div>
-                <h3>International Scientific Baccalaureate</h3>
-                <p class="org">Lycée Polyvalent Fez</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact" id="contact">
-        <div class="wrap">
-          <div class="contact-box">
-            <h2>Let’s work together</h2>
-            <p>Hiring a full-stack web or mobile engineer? Write to me — I reply quickly.</p>
-            <a class="btn btn-solid" href="mailto:najariyoussef8@gmail.com">Send an email</a>
-            <div class="contact-links">
-              <a href="mailto:najariyoussef8@gmail.com">najariyoussef8@gmail.com</a>
-              <a href="tel:+212608632710">+212 608 632 710</a>
-              <a href="https://github.com/youssefnj" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="https://www.linkedin.com/in/youssef-najari" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a href="./CV.pdf" download>CV</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="wrap">© 2026 · Designed and built by Youssef Najari. Available for work.</div>
-    </footer>
+    <footer class="footer">© 2026 · Designed and built by Youssef Najari. Available for work.</footer>
 
     <script>
       const menuBtn = document.getElementById("menu-btn");
