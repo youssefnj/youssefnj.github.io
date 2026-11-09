@@ -23,11 +23,23 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./depth.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body>
     <a class="skip" href="#profile">Skip to content</a>
 
     <header class="banner" id="top">
+      <div class="banner-art" aria-hidden="true">
+        <div class="scene scene-lg">
+          <div class="cube"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="scene scene-sm">
+          <div class="cube"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
       <div class="banner-inner">
         <div class="avatar" aria-hidden="true">YN</div>
         <div>
@@ -317,6 +329,59 @@
           menuBtn.setAttribute("aria-expanded", "false");
         });
       });
+
+      // Scroll reveal
+      const reveals = document.querySelectorAll(".main section, .side section");
+      reveals.forEach((el) => el.classList.add("reveal"));
+      if ("IntersectionObserver" in window) {
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("in");
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.08 }
+        );
+        reveals.forEach((el) => io.observe(el));
+      } else {
+        reveals.forEach((el) => el.classList.add("in"));
+      }
+
+      // 3D tilt on pointer move (fine pointers, no reduced motion)
+      const canTilt =
+        window.matchMedia("(hover: hover) and (pointer: fine)").matches &&
+        !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (canTilt) {
+        const tilt = (el, max) => {
+          el.addEventListener("pointermove", (e) => {
+            const r = el.getBoundingClientRect();
+            const px = (e.clientX - r.left) / r.width - 0.5;
+            const py = (e.clientY - r.top) / r.height - 0.5;
+            el.style.setProperty("--ry", (px * max).toFixed(2) + "deg");
+            el.style.setProperty("--rx", (-py * max).toFixed(2) + "deg");
+          });
+          el.addEventListener("pointerleave", () => {
+            el.style.removeProperty("--ry");
+            el.style.removeProperty("--rx");
+          });
+        };
+        document.querySelectorAll(".card").forEach((el) => tilt(el, 3));
+        document.querySelectorAll(".main section > .item").forEach((el) => tilt(el, 2.5));
+        const avatar = document.querySelector(".avatar");
+        if (avatar) {
+          avatar.style.pointerEvents = "auto";
+          document.querySelector(".banner").addEventListener("pointermove", (e) => {
+            const r = avatar.getBoundingClientRect();
+            const dx = (e.clientX - (r.left + r.width / 2)) / window.innerWidth;
+            const dy = (e.clientY - (r.top + r.height / 2)) / window.innerHeight;
+            avatar.style.setProperty("--ry", (-10 + dx * 24).toFixed(2) + "deg");
+            avatar.style.setProperty("--rx", (6 - dy * 24).toFixed(2) + "deg");
+          });
+        }
+      }
     </script>
   </body>
 </html>
