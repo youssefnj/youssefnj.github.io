@@ -7,7 +7,7 @@ export const profile = {
   email: "najariyoussef8@gmail.com",
   github: "https://github.com/youssefnj",
   githubLabel: "github.com/youssefnj",
-  linkedin: "https://www.linkedin.com/in/youssef-najari",
+  linkedin: "https://www.linkedin.com/in/youssef-najari-936a38396/",
   cv: "/CV.pdf",
 };
 

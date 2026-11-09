@@ -36,7 +36,3 @@ git push -u origin main
 
 Copy `docs/github-profile-readme.md` into a second public repo named `youssefnj`.
 That file becomes the introduction on https://github.com/youssefnj.
-
-## Personal links
-
-Update `src/data/content.ts` if your LinkedIn URL is different from `linkedin.com/in/youssef-najari`.
